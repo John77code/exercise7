@@ -1,0 +1,50 @@
+#include <stdio.h>
+#include <math.h> //importing the math library
+
+/* function prototypes are declared here */
+
+void printHello(void);
+void display_line(float val,float result);
+double compute(float squareRoot);
+
+int main()
+{
+    float value,sum,result,squareRoot = 0;
+    printHello();
+    for(sum=0.5f;sum<=10;sum+=0.5f)
+    {
+        compute(squareRoot);
+    }
+    display_line(sum,result);
+
+    return 0;
+}
+//------------------------------------------------------------------------
+void printHello(void)
+/* Display a brief description of the program functionality */
+{
+    printf( "Welcome, this is a modular program that computes the\n ");
+    printf( "Sqrt values from 0.5 to 10.0 and displays the result" );
+    printf( " to 5 decimal places of accuracy.\n" );
+}
+//------------------------------------------------------------------------
+double compute(float squareRoot)
+{
+    double sum;
+    //float result;
+
+    //for(sum=0.5f;sum<=10;sum+=0.5f) //iterates through the numbers 0.5 to 10
+    //{
+    //squareRoot=sqrt((sum+1)/5);  //computes the calculation
+        //display_line(sum,result); //calls the display line function to display
+    //return sum;
+        
+    //}
+    return squareRoot;
+}
+
+//------------------------------------------------------------------------
+void display_line(float val, float result)
+{
+    printf("\n Val=%.1f result = %.5f",val,result);// displays computed values
+}
